@@ -10,5 +10,6 @@ pipeline{
         steps{
           dir 'phptest/PHPfinal/'
           mvn test
+        }
     }
   }

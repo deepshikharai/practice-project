@@ -8,7 +8,7 @@ pipeline{
          }
       stage ('test') {
         steps{
-          dir 'phptest/PHPfinal/'
+          dir '$WORKSPACE/DemoPipeline/phptest/PHPfinal/'
           mvn test
         }
     }

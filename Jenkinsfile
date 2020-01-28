@@ -3,7 +3,8 @@ pipeline{
     stages {
         stage ('git') {
             steps {
-                   git pull "https://github.com/deepshikharai/phptest.git"
+                  sh ``` git pull "https://github.com/deepshikharai/phptest.git"
+                      ```
             }
          }
     }

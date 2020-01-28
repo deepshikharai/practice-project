@@ -4,7 +4,6 @@ pipeline{
       stage ('git') {
         steps{
           git url: 'https://github.com/deepshikharai/phptest.git'
-          dir 'var/jenkins_home/workspace/DemoPipeline/phptest/PHPfinal/'
           sh 'mvn test'
             }
          }

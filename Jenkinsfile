@@ -4,14 +4,11 @@ pipeline{
       stage ('git') {
         steps{
           git url: 'https://github.com/deepshikharai/phptest.git'
-          
             }
          }
-      stage ('test') {
-        
+      stage ('Test') {
         steps{
-         
-          mvn test
+          sh 'mvn test'
         }
     }
   }
